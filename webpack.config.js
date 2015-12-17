@@ -1,20 +1,3 @@
-// module.exports = {
-//  	resolve: {
-//  		extensions: ['', '.jsx', '.js'] },
-//  		entry : './src/js/app.jsx',
-//  		output: {
-//  			path : './build',
-//  			filename : 'index.js'
-//  		},
-//  		module: {
-// 			loaders : [{
-// 				test: /\.jsx$/,
-//         exclude: /node_modules/,
-// 				loader: 'babel-loader'
-// 			}]
-// 		}
-// }
-
 var path    = require('path'),
     webpack = require('webpack');
 
@@ -36,7 +19,7 @@ module.exports = {
       {
         test:/\.js$/,
         loaders: ['react-hot','babel'],
-        include : path.join(__dirname,'src') 
+        include : path.join(__dirname,'src')
       }
     ]
   }
