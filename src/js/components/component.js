@@ -1,11 +1,14 @@
 import React from 'react';
+import styles from './component.css';
 
 class Component extends React.Component {
 
   render() {
-    return <div>
-      <h1> Hello  {this.props.name} ! </h1>
-    </div>
+    return <div className={styles.container}>
+            <h1 className={styles.title}>
+              Hello <span className={styles.name}>  {this.props.name}</span> !
+            </h1>
+        </div>
   }
 }
 
